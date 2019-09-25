@@ -20,7 +20,7 @@ public class Remark {
     public boolean equals(Object other) {
         return other == this
                 || (other instanceof Remark)
-                && value.equals((((Remark) other).value));
+                && value.equals(((Remark) other).value);
     }
 
     @Override

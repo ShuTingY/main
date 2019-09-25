@@ -110,6 +110,8 @@ public class EditCommand extends Command {
 
         // state check
         EditCommand e = (EditCommand) other;
+        boolean indexeq = index.equals(e.index);
+        boolean epdequ = editPersonDescriptor.equals(e.editPersonDescriptor);
         return index.equals(e.index)
                 && editPersonDescriptor.equals(e.editPersonDescriptor);
     }
@@ -219,6 +221,14 @@ public class EditCommand extends Command {
 
             // state check
             EditPersonDescriptor e = (EditPersonDescriptor) other;
+            boolean isName = getName().equals(e.getName());
+            boolean isPhone = getPhone().equals(e.getPhone());
+            boolean isAddress = getAddress().equals(e.getAddress());
+            boolean isRemark = getRemark().equals(e.getRemark());
+            String remark2 = getRemark().toString();
+            String remark3 = e.getRemark().toString();
+            boolean isTag = getTags().equals(e.getTags());
+
 
             return getName().equals(e.getName())
                     && getPhone().equals(e.getPhone())
