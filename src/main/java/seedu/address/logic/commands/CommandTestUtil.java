@@ -1,5 +1,8 @@
 package seedu.address.logic.commands;
 
+/**
+ * Test case with valid data of person
+ */
 public class CommandTestUtil {
     public static final String VALID_EMAIL_BOB = "bob@example.com";
     public static final String VALID_ADDRESS_AMY = "Block 312, Amy Street 1";
