@@ -1,3 +1,4 @@
+https://coveralls.io/repos/github/ShuTingY/main/badge.svg?branch=master(Coverage Status)!:https://coveralls.io/github/ShuTingY/main?branch=master
 = Address Book (Level 3)
 ifdef::env-github,env-browser[:relfileprefix: docs/]
 
