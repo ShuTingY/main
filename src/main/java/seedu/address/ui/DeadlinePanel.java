@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.scene.text.TextFlow;
 import seedu.address.model.deadline.Deadline;
 
@@ -33,7 +34,9 @@ public class DeadlinePanel extends UiPart<Region> {
         id.setText(displayedIndex + ". ");
         Text deadlineText = new Text (deadline.getTask().toString());
         deadlineText.setId("deadlinetext");
+
         task.getChildren().add(deadlineText);
+        task.setTextAlignment(TextAlignment.LEFT);
         //TODO: use date to colour code each deadline
         //LocalDate today = LocalDate.now();
         //deadline.getDueDate();
